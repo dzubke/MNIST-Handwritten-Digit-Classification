@@ -1,10 +1,4 @@
 # MNIST-Handwritten-Digit-Classification
 Classifies the handwritten digits in the MNIST dataset
 
-This notebook uses a variety of machine learning techniques including logistic regression as a one-vs-all multi-class 
-classification of the 0 through 9 handwritten digits in the MNIST dataset. 
-A detailed description of the dataset and a catolog of previous analysis on the datset can be found 
-here: http://yann.lecun.com/exdb/mnist/. 
-
-The best notebook to view will have the name MNIST Handwritten Digit Classifier-YYYMMDD.ipynb with the most recent
-date in the YYYYMMDD format. 
+This notebook uses a number (presently 2) different approachs to classify handwritten digits (zero through nine) in the MNIST dataset. A detailed description of the dataset and a catolog of previous analysis on the datset can be found here: http://yann.lecun.com/exdb/mnist/. The first approach applies logistic regression as a one-vs-all multi-class classification. This approach is fully developed and acheived around an 10% error rate, which is expected for the simplicity of the logistic regression approach and the fact that I didn't overly optimize the number of iterations and tune the hyperparameters. The second approach utilized a 3-layer neural network with a softmax function as the final activation layer, which is all coded in tensorflow. Using 300 hidden units, the network acheives an error rate of X%, which is comparable to a similar network's error rate tested in 	LeCun et al. 1998.
